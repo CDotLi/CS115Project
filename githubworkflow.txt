@@ -1,0 +1,14 @@
+When working with github in this project please use the following when commiting changes to the project:
+
+USING GIT IN TERMINAL OF VSCODE
+using vscode terminal to git push/pull  (https://guides.codepath.com/ios/Using-Git-with-Terminal)
+(install git)
+..to push
+> git add .   <-- this says to add all your files with changes
+> git status  <-- this will tell you what youve changed.
+> git commit -m "using the terminal" <-- commit your changes with usefull note
+> git push    <-- push changes to your fork of the project
+
+..to update to most up-to-date version:
+First sync your branch in github then....
+> git pull    <-- will grab changes from github and add them to your project.
