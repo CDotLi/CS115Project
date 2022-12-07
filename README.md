@@ -4,3 +4,4 @@ Student project for Algorithms & Data Structures.
 
 Team members:
 Christian Leon
+Ceasar Moya
