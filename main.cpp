@@ -21,71 +21,78 @@ int main(int argc, const char * argv[]) {
     const int myLar = 5000;
     int lar[myLar];
 
+    const int mySmall1 = 10000;
+    int small1[mySmall];
+    const int myMed1 = 15000;
+    int med1[myMed];
+    const int myLar1 = 20000;
+    int lar1[myLar];
+
     // Small heapSort times below
-    fillUpward(small, mySmall);
+    fillUpward(small1, mySmall1);
     float time = clock();
-    heapSort(small, mySmall);
+    heapSort(small1, mySmall1);
     time = clock() - time;
     cout << "total time taken for small sorted set of heapSort = " << time / CLOCKS_PER_SEC << endl;
 
 
-    fillReverse(small, mySmall);
+    fillReverse(small1, mySmall1);
     time = clock();
-    heapSort(small, mySmall);
+    heapSort(small1, mySmall1);
     time = clock() - time;
     cout << "total time taken for small reverse set of heapSort = " << time / CLOCKS_PER_SEC << endl;
 
 
 
-    fillHalfReverse(small, mySmall);
+    fillHalfReverse(small1, mySmall1);
     time = clock();
-    heapSort(small, mySmall);
+    heapSort(small1, mySmall1);
     time = clock() - time;
     cout << "total time taken for small half sorted set of heapSort = " << time / CLOCKS_PER_SEC << endl;
 
 
     // Medium heapSort times below
-    fillUpward(med, myMed);
+    fillUpward(med1, myMed1);
     time = clock();
-    heapSort(med, myMed);
+    heapSort(med1, myMed1);
     time = clock() - time;
     cout << "total time taken for medium sorted set of heapSort = " << time / CLOCKS_PER_SEC << endl;
 
 
-    fillReverse(med, myMed);
+    fillReverse(med1, myMed1);
     time = clock();
-    heapSort(med, myMed);
+    heapSort(med1, myMed1);
     time = clock() - time;
     cout << "total time taken for medium reverse set of heapSort = " << time / CLOCKS_PER_SEC << endl;
 
 
 
-    fillHalfReverse(med, myMed);
+    fillHalfReverse(med1, myMed1);
     time = clock();
-    heapSort(med, myMed);
+    heapSort(med1, myMed1);
     time = clock() - time;
     cout << "total time taken for medium half sorted set of heapSort = " << time / CLOCKS_PER_SEC << endl;
 
 
         // Large heapSort times below
-    fillUpward(lar, myLar);
+    fillUpward(lar1, myLar1);
     time = clock();
-    heapSort(lar, myLar);
+    heapSort(lar1, myLar1);
     time = clock() - time;
     cout << "total time taken for large sorted set of heapSort = " << time / CLOCKS_PER_SEC << endl;
 
 
-    fillReverse(lar, myLar);
+    fillReverse(lar1, myLar1);
     time = clock();
-    heapSort(lar, myLar);
+    heapSort(lar1, myLar1);
     time = clock() - time;
     cout << "total time taken for large reverse set of heapSort = " << time / CLOCKS_PER_SEC << endl;
 
 
 
-    fillHalfReverse(lar, myLar);
+    fillHalfReverse(lar1, myLar1);
     time = clock();
-    heapSort(lar, myLar);
+    heapSort(lar1, myLar1);
     time = clock() - time;
     cout << "total time taken for large half sorted set of heapSort = " << time / CLOCKS_PER_SEC << endl;
 
