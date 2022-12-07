@@ -22,11 +22,11 @@ int main(int argc, const char * argv[]) {
     int lar[myLar];
 
     const int mySmall1 = 10000;
-    int small1[mySmall];
+    int small1[mySmall1];
     const int myMed1 = 15000;
-    int med1[myMed];
+    int med1[myMed1];
     const int myLar1 = 20000;
-    int lar1[myLar];
+    int lar1[myLar1];
 
     // Small heapSort times below
     fillUpward(small1, mySmall1);
