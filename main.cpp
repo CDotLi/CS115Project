@@ -8,7 +8,7 @@
 #include "ceasar.h"
 #include "chris.h"
 #include "paramvir.h"
-#include "time.h"
+#include "ctime"
 using namespace std;
 
 
@@ -23,17 +23,17 @@ int main(int argc, const char * argv[]) {
 
     // Small heapSort times below
     fillUpward(small, mySmall);
-    int time = clock();
+    float time = clock();
     heapSort(small, mySmall);
     time = clock() - time;
-    cout << "total time taken for small sorted set of heapSort = " << time << endl;
+    cout << "total time taken for small sorted set of heapSort = " << time / CLOCKS_PER_SEC << endl;
 
 
     fillReverse(small, mySmall);
     time = clock();
     heapSort(small, mySmall);
     time = clock() - time;
-    cout << "total time taken for small reverse set of heapSort = " << time << endl;
+    cout << "total time taken for small reverse set of heapSort = " << time / CLOCKS_PER_SEC << endl;
 
 
 
@@ -41,7 +41,7 @@ int main(int argc, const char * argv[]) {
     time = clock();
     heapSort(small, mySmall);
     time = clock() - time;
-    cout << "total time taken for small half sorted set of heapSort = " << time << endl;
+    cout << "total time taken for small half sorted set of heapSort = " << time / CLOCKS_PER_SEC << endl;
 
 
     // Medium heapSort times below
@@ -49,14 +49,14 @@ int main(int argc, const char * argv[]) {
     time = clock();
     heapSort(med, myMed);
     time = clock() - time;
-    cout << "total time taken for medium sorted set of heapSort = " << time << endl;
+    cout << "total time taken for medium sorted set of heapSort = " << time / CLOCKS_PER_SEC << endl;
 
 
     fillReverse(med, myMed);
     time = clock();
     heapSort(med, myMed);
     time = clock() - time;
-    cout << "total time taken for medium reverse set of heapSort = " << time << endl;
+    cout << "total time taken for medium reverse set of heapSort = " << time / CLOCKS_PER_SEC << endl;
 
 
 
@@ -64,7 +64,7 @@ int main(int argc, const char * argv[]) {
     time = clock();
     heapSort(med, myMed);
     time = clock() - time;
-    cout << "total time taken for medium half sorted set of heapSort = " << time << endl;
+    cout << "total time taken for medium half sorted set of heapSort = " << time / CLOCKS_PER_SEC << endl;
 
 
         // Large heapSort times below
@@ -72,14 +72,14 @@ int main(int argc, const char * argv[]) {
     time = clock();
     heapSort(lar, myLar);
     time = clock() - time;
-    cout << "total time taken for large sorted set of heapSort = " << time << endl;
+    cout << "total time taken for large sorted set of heapSort = " << time / CLOCKS_PER_SEC << endl;
 
 
     fillReverse(lar, myLar);
     time = clock();
     heapSort(lar, myLar);
     time = clock() - time;
-    cout << "total time taken for large reverse set of heapSort = " << time << endl;
+    cout << "total time taken for large reverse set of heapSort = " << time / CLOCKS_PER_SEC << endl;
 
 
 
@@ -87,7 +87,7 @@ int main(int argc, const char * argv[]) {
     time = clock();
     heapSort(lar, myLar);
     time = clock() - time;
-    cout << "total time taken for large half sorted set of heapSort = " << time << endl;
+    cout << "total time taken for large half sorted set of heapSort = " << time / CLOCKS_PER_SEC << endl;
 
     //Small bubble Sort times below
 
@@ -95,14 +95,14 @@ int main(int argc, const char * argv[]) {
     time = clock();
     bubbleSort(small, mySmall);
     time = clock() - time;
-    cout << "total time taken for small sorted set of bubbleSort = " << time << endl;
+    cout << "total time taken for small sorted set of bubbleSort = " << time / CLOCKS_PER_SEC << endl;
 
 
     fillReverse(small, mySmall);
     time = clock();
     bubbleSort(small, mySmall);
     time = clock() - time;
-    cout << "total time taken for small reverse set of bubbleSort = " << time << endl;
+    cout << "total time taken for small reverse set of bubbleSort = " << time / CLOCKS_PER_SEC << endl;
 
 
 
@@ -110,7 +110,7 @@ int main(int argc, const char * argv[]) {
     time = clock();
     bubbleSort(small, mySmall);
     time = clock() - time;
-    cout << "total time taken for small half sorted set of bubbleSort = " << time << endl;
+    cout << "total time taken for small half sorted set of bubbleSort = " << time / CLOCKS_PER_SEC << endl;
 
 
     //Medium size bubbleSort below
@@ -120,14 +120,14 @@ int main(int argc, const char * argv[]) {
     time = clock();
     bubbleSort(med, myMed);
     time = clock() - time;
-    cout << "total time taken for medium sorted set of bubbleSort = " << time << endl;
+    cout << "total time taken for medium sorted set of bubbleSort = " << time / CLOCKS_PER_SEC << endl;
 
 
     fillReverse(med, myMed);
     time = clock();
     bubbleSort(med, myMed);
     time = clock() - time;
-    cout << "total time taken for medium reverse set of bubbleSort = " << time << endl;
+    cout << "total time taken for medium reverse set of bubbleSort = " << time / CLOCKS_PER_SEC << endl;
 
 
 
@@ -135,7 +135,7 @@ int main(int argc, const char * argv[]) {
     time = clock();
     bubbleSort(med, myMed);
     time = clock() - time;
-    cout << "total time taken for Medium half sorted set of bubbleSort = " << time << endl;
+    cout << "total time taken for Medium half sorted set of bubbleSort = " << time / CLOCKS_PER_SEC << endl;
 
 
         //Large size bubbleSort below
@@ -145,14 +145,14 @@ int main(int argc, const char * argv[]) {
     time = clock();
     bubbleSort(lar, myLar);
     time = clock() - time;
-    cout << "total time taken for large sorted set of bubbleSort = " << time << endl;
+    cout << "total time taken for large sorted set of bubbleSort = " << time / CLOCKS_PER_SEC << endl;
 
 
     fillReverse(lar, myLar);
     time = clock();
     bubbleSort(lar, myLar);
     time = clock() - time;
-    cout << "total time taken for large reverse set of bubbleSort = " << time << endl;
+    cout << "total time taken for large reverse set of bubbleSort = " << time / CLOCKS_PER_SEC << endl;
 
 
 
@@ -160,7 +160,7 @@ int main(int argc, const char * argv[]) {
     time = clock();
     bubbleSort(lar, myLar);
     time = clock() - time;
-    cout << "total time taken for large half sorted set of bubbleSort = " << time << endl;
+    cout << "total time taken for large half sorted set of bubbleSort = " << time / CLOCKS_PER_SEC << endl;
 
    
     return 0;
