@@ -14,11 +14,11 @@ using namespace std;
 
 
 int main(int argc, const char * argv[]) {
-    const int mySmall = 50;
+    const int mySmall = 1000;
     int small[mySmall];
-    const int myMed = 200;
+    const int myMed = 2500;
     int med[myMed];
-    const int myLar = 1000;
+    const int myLar = 5000;
     int lar[myLar];
 
     // Small heapSort times below
